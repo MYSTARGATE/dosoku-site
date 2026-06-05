@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DOSOKU | 土量・測量支援システム</title>
+  <title>お問い合わせ | DOSOKU</title>
   <style>
 *{box-sizing:border-box}
 body{margin:0;font-family:"Segoe UI","Hiragino Sans","Yu Gothic",sans-serif;background:#06111f;color:#fff}
@@ -96,176 +96,82 @@ button{width:100%;border:0;border-radius:12px;background:#00aaff;color:white;fon
 </style>
 </head>
 <body>
-
-
-<div id="loader">
-  <img src="images/logo-d.png" class="loader-logo" alt="DOSOKU">
-  <div class="loader-title">DOSOKU</div>
-  <div class="loader-sub">土量・測量支援システム</div>
-  <div class="bar-row">MY engine<div class="bar"><span></span></div></div>
-  <div class="bar-row">STAR engine<div class="bar"><span></span></div></div>
-  <div class="bar-row">GATE engine<div class="bar"><span></span></div></div>
-  <div class="bar-row">DOSOKU tools<div class="bar"><span></span></div></div>
-  <div class="loader-status" id="loaderStatus"></div>
-</div>
-
-
-<header>
+<header class="page-header">
   <nav>
-    <a class="brand" href="index.html"><img src="images/logo-d.png" alt="DOSOKU">DOSOKU</a>
+    <a class="brand" href="../index.html"><img src="../images/logo-d.png" alt="DOSOKU">DOSOKU</a>
     <div class="nav-links">
-      <a href="#features">機能</a>
-      <a href="#steps">使い方</a>
-      <a href="#pricing">料金</a>
-      <a href="contact/">お問い合わせ</a>
+      <a href="../index.html#features">機能</a>
+      <a href="../index.html#steps">使い方</a>
+      <a href="../index.html#pricing">料金</a>
+      <a href="../terms.html">利用規約</a>
     </div>
   </nav>
-
-  <div class="hero">
-    <div>
-      <span class="badge">Standard v2.0.2</span>
-      <h1>図面から、<br>スマートに土量測量。</h1>
-      <p class="lead">PDF・DXF・画像図面を読み込み、囲うだけで面積・体積を算出。<br>現場の測量・集計・報告書作成を、もっと簡単に。</p>
-      <div class="hero-buttons">
-        <a class="btn-primary" href="#pricing">料金を見る</a>
-        <a class="btn-secondary" href="contact/">お問い合わせ</a>
-      </div>
-    </div>
-    <img class="hero-img" src="images/screen-main.png" alt="DOSOKU画面">
+  <div class="page-title">
+    <span class="badge">Contact</span>
+    <h1>お問い合わせ</h1>
+    <p class="lead">体験版申込・見積依頼・導入相談など、DOSOKUに関するお問い合わせはこちらから。</p>
   </div>
 </header>
 
-<section id="features">
-  <h2 class="section-title">DOSOKUでできること</h2>
-  <p class="section-sub">図面データを活用し、土量計算・測量業務を効率化します。</p>
-
-  <div class="features">
-    <div class="card"><h3>PDF読込</h3><p>PDF図面をそのまま読み込み、測量作業に利用できます。</p></div>
-    <div class="card"><h3>DXF読込</h3><p>CAD図面にも対応し、図面を活用した測量が可能です。</p></div>
-    <div class="card"><h3>画像読込</h3><p>JPG・PNGなどの画像図面にも対応します。</p></div>
-    <div class="card"><h3>縮尺設定</h3><p>図面上の距離をもとに実寸へ変換できます。</p></div>
-    <div class="card"><h3>面積計測</h3><p>範囲を囲うだけで面積を算出できます。</p></div>
-    <div class="card"><h3>体積計算</h3><p>高さを入力して体積を計算できます。</p></div>
-    <div class="card"><h3>CSV/PDF出力</h3><p>集計結果や報告書を出力できます。</p></div>
-    <div class="card"><h3>プロジェクト保存</h3><p>作業内容を保存し、あとから再開できます。</p></div>
+<main class="page-main">
+  <div class="page-box">
+    <form action="https://formspree.io/f/xaqznzrg" method="POST">
+      <!-- Formspree等を利用する場合は、上記action URLを発行されたURLに差し替えてください。 -->
+      <div class="form-grid">
+        <div class="form-field full">
+          <label for="type">お問い合わせ種別 必須</label>
+          <select id="type" name="お問い合わせ種別" required>
+            <option value="">選択してください</option>
+            <option>体験版申込</option>
+            <option>見積依頼</option>
+            <option>導入相談</option>
+            <option>製品について</option>
+            <option>その他</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label for="company">会社名 必須</label>
+          <input id="company" type="text" name="会社名" required>
+        </div>
+        <div class="form-field">
+          <label for="department">部署名 必須</label>
+          <input id="department" type="text" name="部署名" required>
+        </div>
+        <div class="form-field">
+          <label for="name">お名前 必須</label>
+          <input id="name" type="text" name="お名前" required>
+        </div>
+        <div class="form-field">
+          <label for="kana">ふりがな 必須</label>
+          <input id="kana" type="text" name="ふりがな" required>
+        </div>
+        <div class="form-field">
+          <label for="email">メールアドレス 必須</label>
+          <input id="email" type="email" name="メールアドレス" required>
+        </div>
+        <div class="form-field">
+          <label for="tel">電話番号 必須</label>
+          <input id="tel" type="tel" name="電話番号" required>
+        </div>
+        <div class="form-field full">
+          <label for="message">お問い合わせ内容 必須</label>
+          <textarea id="message" name="お問い合わせ内容" required></textarea>
+        </div>
+      </div>
+      <button type="submit">送信する</button>
+      <p class="note">送信いただいた内容は、お問い合わせ対応・見積作成・製品案内・サポート対応の目的で利用します。</p>
+    </form>
   </div>
-
-  <img class="image-wide" src="images/feature-overview.png" alt="DOSOKU機能紹介">
-</section>
-
-<section id="steps" class="dark">
-  <h2 class="section-title">かんたん5ステップ</h2>
-  <p class="section-sub">図面を読み込み、囲って、高さを入力するだけ。</p>
-
-  <div class="steps">
-    <div class="step">
-      <img src="images/step-01-import.png" alt="STEP1 図面読込">
-      <div class="num">1</div><h3>図面読込</h3><p>PDF・DXF・画像を読み込みます。</p>
-    </div>
-    <div class="step">
-      <img src="images/step-02-scale.png" alt="STEP2 縮尺設定">
-      <div class="num">2</div><h3>縮尺設定</h3><p>図面の縮尺を設定します。</p>
-    </div>
-    <div class="step">
-      <img src="images/step-03-area.png" alt="STEP3 範囲囲い">
-      <div class="num">3</div><h3>範囲を囲う</h3><p>測量したい範囲を囲います。</p>
-    </div>
-    <div class="step">
-      <img src="images/step-04-height.png" alt="STEP4 高さ入力">
-      <div class="num">4</div><h3>高さ入力</h3><p>平均高さを入力します。</p>
-    </div>
-    <div class="step">
-      <img src="images/step-05-volume.png" alt="STEP5 体積算出">
-      <div class="num">5</div><h3>体積算出</h3><p>面積・体積を算出します。</p>
-    </div>
-  </div>
-</section>
-
-<section>
-  <h2 class="section-title">現場で活用</h2>
-  <p class="section-sub">造成工事・土木工事・外構工事・解体工事・測量業務など、さまざまな現場で活用できます。</p>
-  <img class="image-wide" src="images/pamphlet-front.jpg" alt="DOSOKUパンフレット">
-</section>
-
-<section id="pricing">
-  <h2 class="section-title">料金プラン</h2>
-  <p class="section-sub">Standard版は買い切り・年額契約に対応予定です。</p>
-  <div class="pricing">
-    <div class="price-card"><h3>永続ライセンス版</h3><div class="price">198,000円</div><ul><li>5アカウントまで利用可能</li><li>永続ライセンス</li><li>1年間アップデート権付属</li><li>保守サポート別</li></ul></div>
-    <div class="price-card"><h3>サブスクリプション版</h3><div class="price">36,000円/年</div><ul><li>1アカウント利用</li><li>契約期間中アップデート利用可能</li><li>追加アカウント 18,000円/年</li></ul></div>
-    <div class="price-card"><h3>リリースキャンペーン</h3><div class="price">48,000円</div><ul><li>先着10社限定予定</li><li>5アカウントまで利用可能</li><li>7日間体験版あり</li></ul></div>
-  </div>
-</section>
-
-<section class="dark">
-  <div class="pro">
-    <h2>DOSOKU Pro 開発構想</h2>
-    <p>Standard版の次の進化として、より高度な土量解析機能を開発予定です。</p>
-    <ul><li>AI自動一次選択</li><li>高低差対応</li><li>3D土量解析</li><li>手直し前提のAI補助測量</li></ul>
-  </div>
-</section>
-
-<section id="contact">
-  <h2 class="section-title">お問い合わせ</h2>
-  <p class="section-sub">DOSOKUの導入・体験版・お見積りについては、専用フォームよりお問い合わせください。</p>
-  <div class="card" style="text-align:center;">
-    <img src="images/logo-mystargate.png" class="footer-logo" alt="MY STAR GATE">
-    <h3>MY STAR GATE</h3>
-    <p>建設・土木・測量業務の効率化を支援するソフトウェアを開発しています。</p>
-    <p><a class="btn-primary" style="display:inline-block;text-decoration:none;padding:14px 24px;border-radius:10px;font-weight:bold;margin-top:8px;" href="contact/">お問い合わせフォームへ</a></p>
-  </div>
-</section>
-
+</main>
 
 <footer>
-  <img src="images/logo-d.png" class="footer-logo" alt="DOSOKU">
+  <img src="../images/logo-d.png" class="footer-logo" alt="DOSOKU">
   <p>© MY STAR GATE / DOSOKU</p>
   <div class="footer-links">
-    <a href="terms.html">利用規約</a> |
-    <a href="privacy.html">プライバシーポリシー</a> |
-    <a href="commerce.html">特定商取引法に基づく表記</a>
+    <a href="../terms.html">利用規約</a> |
+    <a href="../privacy.html">プライバシーポリシー</a> |
+    <a href="../commerce.html">特定商取引法に基づく表記</a>
   </div>
 </footer>
-
-
-
-<script>
-  window.addEventListener("load", function(){
-    const rows = Array.from(document.querySelectorAll("#loader .bar-row"));
-    const status = document.getElementById("loaderStatus");
-    let index = 0;
-
-    function runRow(){
-      if(index >= rows.length){
-        status.textContent = "SYSTEM READY";
-        setTimeout(function(){
-          document.getElementById("loader").classList.add("hide");
-        }, 1000);
-        return;
-      }
-
-      const row = rows[index];
-      const bar = row.querySelector("span");
-      row.classList.add("active");
-      let value = 0;
-
-      const timer = setInterval(function(){
-        value += 5;
-        bar.style.width = value + "%";
-        if(value >= 100){
-          clearInterval(timer);
-          row.classList.remove("active");
-          row.classList.add("done");
-          index++;
-          setTimeout(runRow, 120);
-        }
-      }, 28);
-    }
-
-    runRow();
-  });
-</script>
-
-
 </body>
 </html>

@@ -2,48 +2,104 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>お問い合わせありがとうございました | DOSOKU</title>
+
 <style>
+
 body{
     margin:0;
-    background:#06111f;
-    color:white;
-    font-family:"Yu Gothic",sans-serif;
+    background:linear-gradient(135deg,#06111f,#0d315d);
+    color:#fff;
+    font-family:"Segoe UI","Yu Gothic",sans-serif;
+    min-height:100vh;
     display:flex;
     justify-content:center;
     align-items:center;
-    min-height:100vh;
 }
-.box{
-    max-width:700px;
-    padding:40px;
+
+.container{
+    max-width:800px;
     text-align:center;
+    padding:40px;
 }
+
+.logo{
+    width:120px;
+    margin-bottom:20px;
+}
+
+.check{
+    font-size:72px;
+    margin-bottom:20px;
+}
+
 h1{
-    color:#00aaff;
+    font-size:42px;
+    margin-bottom:20px;
 }
-.btn{
+
+p{
+    font-size:18px;
+    line-height:1.9;
+    color:#d7f2ff;
+}
+
+.button{
     display:inline-block;
-    margin-top:25px;
-    padding:14px 28px;
+    margin-top:35px;
+    padding:16px 32px;
     background:#00aaff;
     color:white;
     text-decoration:none;
-    border-radius:10px;
+    border-radius:12px;
+    font-weight:bold;
+    transition:.2s;
 }
+
+.button:hover{
+    background:#008de6;
+}
+
+.notice{
+    margin-top:30px;
+    font-size:14px;
+    color:#9fdfff;
+}
+
 </style>
 </head>
 <body>
-<div class="box">
-    <h1>お問い合わせありがとうございました</h1>
+
+<div class="container">
+
+<img src="../images/logo-d.png"
+     alt="DOSOKU"
+     class="logo">
+
+<div class="check">✅</div>
+
+<h1>お問い合わせありがとうございました</h1>
+
 <p>
-    内容を確認後、ご連絡させていただきます。<br>
-    送信いただきありがとうございました。
+内容を確認後、
+担当者よりご連絡させていただきます。
 </p>
-<a href="https://dosoku.com" class="btn">
-    TOPへ戻る
+
+<p>
+通常2〜3営業日以内にご返信いたします。
+</p>
+
+<a href="https://dosoku.com"
+   class="button">
+トップページへ戻る
 </a>
+
+<div class="notice">
+DOSOKU / MYSTARGATE
 </div>
+
+</div>
+
 </body>
 </html>

@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="DOSOKU(ドーソク)は、PDF・DXF・画像図面から土量計算・面積測定・体積計算を行う土量・測量支援システムです。">
-  <meta name="keywords" content="DOSOKU,ドーソク,土量計算,土量計算ソフト,測量支援,測量ソフト,PDF測量,DXF測量,面積計算,体積計算">
-  <title>DOSOKUドーソク| 土量・測量支援システム</title>
+  <title>DOSOKU（ドーソク）| 土量計算・測量支援システム</title>
+  <meta name="description" content="DOSOKU（ドーソク）は、PDF・DXF・画像図面から距離・面積・体積を算出できる土量計算・測量支援システムです。StandardとProに対応し、体験版はメール問い合わせでご案内します。" />
+  <meta name="keywords" content="DOSOKU,ドーソク,土量計算,土量計算ソフト,測量支援,測量ソフト,PDF測量,DXF測量,面積計算,体積計算" />
   <style>
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -120,6 +120,15 @@ button{width:100%;border:0;border-radius:12px;background:#00aaff;color:white;fon
   .lead{font-size:18px}.section-title{font-size:34px}
   .hero-buttons a,.btn{margin-bottom:12px}
 }
+
+.hero-kicker{display:inline-block;color:#80dcff;border:1px solid rgba(128,220,255,.55);border-radius:999px;padding:8px 14px;font-weight:800;letter-spacing:.08em;margin-bottom:18px;background:rgba(0,170,255,.08)}
+.reason-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:1180px;margin:0 auto}
+.reason-card{background:white;border-radius:18px;padding:26px;border:1px solid #dceaf6;box-shadow:0 10px 28px rgba(0,35,80,.08)}
+.reason-icon{font-size:28px;margin-bottom:12px}.reason-card h3{margin:0 0 10px;color:#003b78}.reason-card p{margin:0;line-height:1.8;color:#47586c;font-size:14px}
+.trial-box{max-width:1000px;margin:34px auto 0;background:linear-gradient(120deg,#06111f,#0d315d);border:1px solid rgba(108,214,255,.25);border-radius:22px;padding:34px;color:white;text-align:center;box-shadow:0 16px 40px rgba(0,0,0,.18)}
+.trial-box h3{font-size:30px;margin:0 0 12px}.trial-box p{color:#d7f2ff;line-height:1.9;margin:0 auto 22px;max-width:720px}.trial-tags{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin:22px 0}.trial-tags span{border:1px solid rgba(128,220,255,.45);border-radius:999px;padding:8px 12px;color:#d8f4ff;font-size:13px;background:rgba(255,255,255,.04)}
+.roadmap{background:linear-gradient(120deg,#06111f,#0d315d);border:1px solid rgba(108,214,255,.25);border-radius:22px;padding:42px;text-align:center;max-width:1000px;margin:0 auto}.roadmap ul{display:inline-block;text-align:left;line-height:2;font-size:18px;color:#d7f2ff}.roadmap p{color:#d7f2ff;line-height:1.9}
+@media(max-width:900px){.reason-grid{grid-template-columns:1fr}.trial-box{padding:26px}.trial-tags{justify-content:flex-start}.roadmap{padding:28px}}
 </style>
 </head>
 <body>
@@ -140,6 +149,7 @@ button{width:100%;border:0;border-radius:12px;background:#00aaff;color:white;fon
     <div class="nav-links">
       <a href="#features">機能</a>
       <a href="#steps">使い方</a>
+      <a href="#reasons">選ばれる理由</a>
       <a href="#pricing">料金</a>
       <a href="#manual">マニュアル</a>
       <a href="contact/">お問い合わせ</a>
@@ -147,11 +157,12 @@ button{width:100%;border:0;border-radius:12px;background:#00aaff;color:white;fon
   </nav>
   <div class="hero">
     <div>
+      <span class="hero-kicker">DOSOKU（ドーソク）公式サイト</span>
       <h1>図面から、<br>スマートに土量測量。</h1>
-      <p class="lead">DOSOKU(ドーソク)は、PDF・DXF・画像図面を読み込み、囲うだけで面積・体積を算出。<br>現場の測量・集計・報告書作成を、もっと簡単に。</p>
+      <p class="lead">DOSOKU（ドーソク）は、PDF・DXF・画像図面を読み込み、囲うだけで面積・体積を算出できる土量計算・測量支援システムです。<br>現場の測量・集計・報告書作成を、もっと簡単に。</p>
       <div class="hero-buttons">
         <a class="btn-primary" href="#pricing">料金を見る</a>
-        <a class="btn-secondary" href="contact/">お問い合わせ</a>
+        <a class="btn-secondary" href="contact/?type=trial">体験版を申し込む</a>
       </div>
     </div>
     <img class="hero-img" src="images/screen-main.png" alt="DOSOKU画面">
@@ -186,43 +197,16 @@ button{width:100%;border:0;border-radius:12px;background:#00aaff;color:white;fon
   </div>
 </section>
 
-<section>
-  <h2 class="section-title">現場で活用</h2>
-  <p class="section-sub">造成工事・土木工事・外構工事・解体工事・測量業務など、さまざまな現場で活用できます。</p>
-  <img class="image-wide" src="images/pamphlet-front.png" alt="DOSOKUパンフレット">
-</section>
-
-<section id="pricing">
-  <h2 class="section-title">料金プラン</h2>
-  <p class="section-sub">ご利用スタイルに合わせて、Standard / Pro の2つのプランをご用意しています。</p>
-  <div class="plan-grid">
-    <div class="plan-card">
-      <div class="plan-head">
-        <div><h3 class="plan-name">Standard <span class="recommend">基本プラン</span></h3><p class="plan-desc">PDF・DXF・画像を使った基本測量、面積・体積計算、CSV/PDF出力に対応。</p></div>
-      </div>
-      <div class="price-table">
-        <div class="price-box"><div class="price-label">永続ライセンス</div><div class="price">198,000<small>円</small></div><div class="tax">税別 / 5アカウントまで</div></div>
-        <div class="price-box"><div class="price-label">年額ライセンス</div><div class="price">36,000<small>円/年</small></div><div class="tax">税別 / 1アカウント</div></div>
-      </div>
-      <ul class="feature-list"><li>PDF・DXF・画像読込</li><li>距離・面積・体積計算</li><li>CSV・PDF出力</li><li>プロジェクト保存・復元</li><li>7日間体験版あり</li></ul>
-      <div class="account-note">永続ライセンスの6アカウント目以降：追加 19,800円/台（税別）</div>
-    </div>
-    <div class="plan-card pro-plan">
-      <div class="plan-head">
-        <div><h3 class="plan-name">Pro</h3><p class="plan-desc">Standardの全機能に加え、自動囲い・OCR・DXF診断・Proレポートに対応した上位プラン。</p></div>
-      </div>
-      <div class="price-table">
-        <div class="price-box"><div class="price-label">永続ライセンス</div><div class="price">298,000<small>円</small></div><div class="tax">税別 / 5アカウントまで</div></div>
-        <div class="price-box"><div class="price-label">年額ライセンス</div><div class="price">48,000<small>円/年</small></div><div class="tax">税別 / 1アカウント</div></div>
-      </div>
-      <ul class="feature-list"><li>Standardの全機能</li><li>PDF自動囲い</li><li>DXF自動囲い</li><li>DXF文字・寸法読取</li><li>DXF診断</li><li>OCR文字読取・縮尺候補抽出</li><li>Proレポート出力</li></ul>
-      <div class="account-note">永続ライセンスの6アカウント目以降：追加 29,800円/台（税別）</div>
-    </div>
-  </div>
-  <div class="pricing-cta"><a class="btn btn-primary" href="contact/">見積・導入相談をする</a></div>
-  <div class="notice-box">
-    <h3>注意事項</h3>
-    <ul><li>表示価格は税別です。</li><li>年額ライセンスは1年ごとの契約更新が必要です。</li><li>ライセンスの再販・譲渡・貸与は禁止されています。</li><li>製品の仕様・価格は予告なく変更される場合があります。</li></ul>
+<section id="reasons">
+  <h2 class="section-title">DOSOKUが選ばれる理由</h2>
+  <p class="section-sub">キャンペーン情報や古いパンフレット画像に頼らず、製品としての強みが伝わる構成に整理しました。</p>
+  <div class="reason-grid">
+    <div class="reason-card"><div class="reason-icon">📐</div><h3>図面からすぐ測れる</h3><p>PDF・DXF・画像を読み込み、縮尺設定後に距離・面積・体積を算出できます。</p></div>
+    <div class="reason-card"><div class="reason-icon">🧾</div><h3>報告書作成を支援</h3><p>測定結果をCSV・PDFで出力でき、集計や報告業務の手間を減らします。</p></div>
+    <div class="reason-card"><div class="reason-icon">🗂️</div><h3>作業を保存できる</h3><p>プロジェクト保存により、作業途中の図面や測定結果を後から再開できます。</p></div>
+    <div class="reason-card"><div class="reason-icon">🖥️</div><h3>Windows 10/11対応</h3><p>建設・土木・外構・測量現場のPC運用を想定したWindowsアプリです。</p></div>
+    <div class="reason-card"><div class="reason-icon">⚙️</div><h3>Proで高度機能へ拡張</h3><p>自動囲い、OCR文字読取、DXF診断、Proレポートなど上位機能へ対応します。</p></div>
+    <div class="reason-card"><div class="reason-icon">🤝</div><h3>体験版は個別案内</h3><p>体験版はメール問い合わせ制。用途を確認し、最新版を個別にご案内します。</p></div>
   </div>
 </section>
 
@@ -235,6 +219,49 @@ button{width:100%;border:0;border-radius:12px;background:#00aaff;color:white;fon
       <ul><li>PDF / DXF / 画像読込</li><li>距離・面積・体積計算</li><li>Standard / Pro 機能一覧</li><li>推奨環境・注意事項</li></ul>
       <p><a class="btn btn-primary" href="manual/DOSOKU_manual.pdf" target="_blank" rel="noopener">マニュアルPDFを見る</a></p>
     </div>
+  </div>
+</section>
+
+<section id="pricing">
+  <h2 class="section-title">料金プラン</h2>
+  <p class="section-sub">ご利用スタイルに合わせて、Standard / Pro の2つのプランをご用意しています。体験版は自動配布ではなく、お問い合わせ後にメールでご案内します。</p>
+  <div class="plan-grid">
+    <div class="plan-card">
+      <div class="plan-head"><div><h3 class="plan-name">Standard <span class="recommend">基本プラン</span></h3><p class="plan-desc">PDF・DXF・画像を使った基本測量、面積・体積計算、CSV/PDF出力に対応。</p></div></div>
+      <div class="price-table">
+        <div class="price-box"><div class="price-label">永続ライセンス</div><div class="price">198,000<small>円</small></div><div class="tax">税別 / 5アカウントまで</div></div>
+        <div class="price-box"><div class="price-label">年額ライセンス</div><div class="price">36,000<small>円/年</small></div><div class="tax">税別 / 1アカウント</div></div>
+      </div>
+      <ul class="feature-list"><li>PDF・DXF・画像読込</li><li>距離・面積・体積計算</li><li>CSV・PDF出力</li><li>プロジェクト保存・復元</li><li>体験版はメール問い合わせでご案内</li></ul>
+      <div class="account-note">永続ライセンスの6アカウント目以降：追加 19,800円/台（税別）</div>
+    </div>
+    <div class="plan-card pro-plan">
+      <div class="plan-head"><div><h3 class="plan-name">Pro</h3><p class="plan-desc">Standardの全機能に加え、自動囲い・OCR・DXF診断・Proレポートに対応した上位プラン。</p></div></div>
+      <div class="price-table">
+        <div class="price-box"><div class="price-label">永続ライセンス</div><div class="price">298,000<small>円</small></div><div class="tax">税別 / 5アカウントまで</div></div>
+        <div class="price-box"><div class="price-label">年額ライセンス</div><div class="price">48,000<small>円/年</small></div><div class="tax">税別 / 1アカウント</div></div>
+      </div>
+      <ul class="feature-list"><li>Standardの全機能</li><li>PDF自動囲い</li><li>DXF自動囲い</li><li>DXF文字・寸法読取</li><li>DXF診断</li><li>OCR文字読取・縮尺候補抽出</li><li>Proレポート出力</li></ul>
+      <div class="account-note">永続ライセンスの6アカウント目以降：追加 29,800円/台（税別）</div>
+    </div>
+  </div>
+  <div class="trial-box">
+    <h3>体験版をご希望の方へ</h3>
+    <p>体験版は自動ダウンロードではなく、お問い合わせフォームからお申し込みいただいた方へメールで個別にご案内します。用途・台数・業務内容を確認し、最新版をご案内します。</p>
+    <div class="trial-tags"><span>使用目的を確認</span><span>使用予定台数を確認</span><span>最新版をメール案内</span><span>導入相談も対応</span></div>
+    <a class="btn btn-primary" href="contact/?type=trial">体験版を申し込む</a>
+  </div>
+  <div class="notice-box">
+    <h3>注意事項</h3>
+    <ul><li>表示価格は税別です。</li><li>年額ライセンスは1年ごとの契約更新が必要です。</li><li>ライセンスの再販・譲渡・貸与は禁止されています。</li><li>製品の仕様・価格は予告なく変更される場合があります。</li></ul>
+  </div>
+</section>
+
+<section class="dark">
+  <div class="roadmap">
+    <h2>DOSOKU Ultimate 開発構想</h2>
+    <p>Standard / Pro の先に、より高度な土量解析・3D活用を見据えた上位構想を検討しています。</p>
+    <ul><li>高低差対応</li><li>3D土量解析</li><li>手直し前提のAI補助測量</li></ul>
   </div>
 </section>
 
@@ -252,7 +279,7 @@ button{width:100%;border:0;border-radius:12px;background:#00aaff;color:white;fon
 
 <footer>
   <img src="images/logo-d.png" class="footer-logo" alt="DOSOKU">
-  <p>© MY STAR GATE / DOSOKU(ドーソク)</p>
+  <p>© MY STAR GATE / DOSOKU（ドーソク）</p>
   <p>お問い合わせ：dosoku.info@gmail.com</p>
   <div class="footer-links">
     <a href="terms.html">利用規約</a> |
@@ -260,7 +287,6 @@ button{width:100%;border:0;border-radius:12px;background:#00aaff;color:white;fon
     <a href="commerce.html">特定商取引法に基づく表記</a>
   </div>
 </footer>
-
 <script>
   window.addEventListener("load", function(){
     const rows = Array.from(document.querySelectorAll("#loader .bar-row"));
@@ -269,23 +295,13 @@ button{width:100%;border:0;border-radius:12px;background:#00aaff;color:white;fon
     function runRow(){
       if(index >= rows.length){
         status.textContent = "SYSTEM READY";
-        setTimeout(function(){ document.getElementById("loader").classList.add("hide"); }, 1000);
+        setTimeout(function(){document.getElementById("loader").classList.add("hide");}, 1000);
         return;
       }
-      const row = rows[index];
-      const bar = row.querySelector("span");
-      row.classList.add("active");
-      let value = 0;
+      const row = rows[index]; const bar = row.querySelector("span"); row.classList.add("active"); let value = 0;
       const timer = setInterval(function(){
-        value += 5;
-        bar.style.width = value + "%";
-        if(value >= 100){
-          clearInterval(timer);
-          row.classList.remove("active");
-          row.classList.add("done");
-          index++;
-          setTimeout(runRow, 120);
-        }
+        value += 5; bar.style.width = value + "%";
+        if(value >= 100){clearInterval(timer); row.classList.remove("active"); row.classList.add("done"); index++; setTimeout(runRow, 120);}
       }, 28);
     }
     runRow();

@@ -109,7 +109,7 @@ button{width:100%;border:0;border-radius:12px;background:#00aaff;color:white;fon
   <div class="page-title">
     <span class="badge">Contact</span>
     <h1>お問い合わせ</h1>
-    <p class="lead">体験版申込・見積依頼・導入相談など、DOSOKUに関するお問い合わせはこちらから。</p>
+    <p class="lead">体験版申込・見積依頼・導入相談など、DOSOKUに関するお問い合わせはこちらから。体験版はメールで個別にご案内します。</p>
   </div>
 </header>
 
@@ -155,9 +155,40 @@ button{width:100%;border:0;border-radius:12px;background:#00aaff;color:white;fon
           <label for="tel">電話番号 必須</label>
           <input id="tel" type="tel" name="電話番号" required>
         </div>
+        <div class="form-field">
+          <label for="purpose">使用目的</label>
+          <select id="purpose" name="使用目的">
+            <option value="">選択してください</option>
+            <option>土木</option>
+            <option>建築</option>
+            <option>外構</option>
+            <option>測量</option>
+            <option>その他</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label for="devices">使用予定台数</label>
+          <select id="devices" name="使用予定台数">
+            <option value="">選択してください</option>
+            <option>1台</option>
+            <option>2～5台</option>
+            <option>6台以上</option>
+          </select>
+        </div>
+        <div class="form-field full">
+          <label for="source">DOSOKUを知ったきっかけ</label>
+          <select id="source" name="DOSOKUを知ったきっかけ">
+            <option value="">選択してください</option>
+            <option>Google検索</option>
+            <option>YouTube</option>
+            <option>ご紹介</option>
+            <option>SNS</option>
+            <option>その他</option>
+          </select>
+        </div>
         <div class="form-field full">
           <label for="message">お問い合わせ内容 必須</label>
-          <textarea id="message" name="お問い合わせ内容" required></textarea>
+          <textarea id="message" name="お問い合わせ内容" placeholder="体験版をご希望の場合は、用途・図面形式・確認したい機能などをご記入ください。" required></textarea>
         </div>
       </div>
       <button type="submit">送信する</button>
@@ -169,11 +200,20 @@ button{width:100%;border:0;border-radius:12px;background:#00aaff;color:white;fon
 <footer>
   <img src="../images/logo-d.png" class="footer-logo" alt="DOSOKU">
   <p>© MY STAR GATE / DOSOKU</p>
+  <p>お問い合わせ：dosoku.info@gmail.com</p>
   <div class="footer-links">
     <a href="../terms.html">利用規約</a> |
     <a href="../privacy.html">プライバシーポリシー</a> |
     <a href="../commerce.html">特定商取引法に基づく表記</a>
   </div>
 </footer>
+
+<script>
+  const params = new URLSearchParams(window.location.search);
+  if (params.get("type") === "trial") {
+    const type = document.getElementById("type");
+    if (type) type.value = "体験版申込";
+  }
+</script>
 </body>
 </html>
